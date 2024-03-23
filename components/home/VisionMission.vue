@@ -9,7 +9,7 @@ onMounted(() => {
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 p-4"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-5 p-4 sm:flex-row"
     >
       <div
         class="max-w-full rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800"

@@ -22,7 +22,7 @@ onMounted(() => {
               <div>
                 <NuxtImg
                   class="h-60 w-full max-w-full rounded-lg object-cover"
-                  src="./person.jpg"
+                  src="/person.jpg"
                   alt=""
                 />
               </div>
@@ -37,7 +37,7 @@ onMounted(() => {
               <div>
                 <NuxtImg
                   class="h-60 w-full max-w-full rounded-lg object-cover"
-                  src="./person-2.jpg"
+                  src="/person-2.jpg"
                   alt=""
                 />
               </div>
@@ -52,7 +52,7 @@ onMounted(() => {
               <div>
                 <NuxtImg
                   class="h-60 w-full max-w-full rounded-lg object-cover"
-                  src="./person-3.jpg"
+                  src="/person-3.jpg"
                   alt=""
                 />
               </div>
@@ -67,7 +67,7 @@ onMounted(() => {
               <div>
                 <NuxtImg
                   class="h-60 w-full max-w-full rounded-lg object-cover"
-                  src="./person-4.jpg"
+                  src="/person-4.jpg"
                   alt=""
                 />
               </div>
@@ -82,7 +82,7 @@ onMounted(() => {
               <div>
                 <NuxtImg
                   class="h-60 w-full max-w-full rounded-lg object-cover"
-                  src="./person-5.jpg"
+                  src="/person-5.jpg"
                   alt=""
                 />
               </div>
@@ -97,7 +97,7 @@ onMounted(() => {
               <div>
                 <NuxtImg
                   class="h-60 w-full max-w-full rounded-lg object-cover"
-                  src="./person-6.jpg"
+                  src="/person-6.jpg"
                   alt=""
                 />
               </div>

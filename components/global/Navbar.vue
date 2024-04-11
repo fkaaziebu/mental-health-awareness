@@ -8,12 +8,12 @@ onMounted(() => {
 </script>
 <template>
   <nav
-    class="fixed w-full z-50 border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900"
+    class="fixed z-50 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900"
   >
     <div
       class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
     >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
           class="h-8"
@@ -23,7 +23,7 @@ onMounted(() => {
           class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
           >Awareness</span
         >
-      </a>
+      </NuxtLink>
       <button
         data-collapse-toggle="navbar-dropdown"
         type="button"
@@ -53,11 +53,11 @@ onMounted(() => {
           class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
         >
           <li>
-            <a
-              href="#"
+            <NuxtLink
+              to="/"
               class="block rounded bg-blue-700 px-3 py-2 text-white dark:bg-blue-600 md:bg-transparent md:p-0 md:text-blue-700 md:dark:bg-transparent md:dark:text-blue-500"
               aria-current="page"
-              >Home</a
+              >Home</NuxtLink
             >
           </li>
           <li>
@@ -93,55 +93,55 @@ onMounted(() => {
                 aria-labelledby="dropdownLargeButton"
               >
                 <li>
-                  <a
-                    href="#"
+                  <NuxtLink
+                    to="/leadership"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Leadership</a
+                    >Leadership</NuxtLink
                   >
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <NuxtLink
+                    to="/social-media"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Social Media</a
+                    >Social Media</NuxtLink
                   >
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <NuxtLink
+                    to="/regional-contacts"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Regional Contacts</a
+                    >Regional Contacts</NuxtLink
                   >
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a
-              href="#"
+            <NuxtLink
+              to="/activities"
               class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >Activities</a
+              >Activities</NuxtLink
             >
           </li>
           <li>
-            <a
-              href="#"
+            <NuxtLink
+              to="/resources"
               class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >Resources</a
+              >Resources</NuxtLink
             >
           </li>
           <li>
-            <a
-              href="#"
+            <NuxtLink
+              to="/advocacy"
               class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >Advocacy</a
+              >Advocacy</NuxtLink
             >
           </li>
           <li>
-            <a
-              href="#"
+            <NuxtLink
+              to="/about-us"
               class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >About Us</a
+              >About Us</NuxtLink
             >
           </li>
         </ul>

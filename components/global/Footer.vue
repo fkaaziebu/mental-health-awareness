@@ -7,8 +7,8 @@ onMounted(() => {
 });
 </script>
 <template>
-  <footer class="bg-white dark:bg-gray-900 mt-20">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+  <footer class="bg-gray-900 text-gray-100">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:pt-20 lg:pb-10 mt-10">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center">
@@ -17,8 +17,7 @@ onMounted(() => {
               class="me-3 h-8"
               alt="FlowBite Logo"
             />
-            <span
-              class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+            <span class="self-center whitespace-nowrap text-2xl font-semibold"
               >Awareness</span
             >
           </a>
@@ -26,11 +25,11 @@ onMounted(() => {
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
           <div>
             <h2
-              class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white"
+              class="mb-6 text-sm font-semibold uppercase"
             >
               Resources
             </h2>
-            <ul class="font-medium text-gray-500 dark:text-gray-400">
+            <ul class="font-medium text-gray-300">
               <li class="mb-4">
                 <a href="https://flowbite.com/" class="hover:underline"
                   >Health book</a
@@ -45,11 +44,11 @@ onMounted(() => {
           </div>
           <div>
             <h2
-              class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white"
+              class="mb-6 text-sm font-semibold uppercase"
             >
               Follow us
             </h2>
-            <ul class="font-medium text-gray-500 dark:text-gray-400">
+            <ul class="font-medium text-gray-300">
               <li class="mb-4">
                 <a
                   href="https://github.com/themesberg/flowbite"
@@ -66,11 +65,11 @@ onMounted(() => {
           </div>
           <div>
             <h2
-              class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white"
+              class="mb-6 text-sm font-semibold uppercase"
             >
               Legal
             </h2>
-            <ul class="font-medium text-gray-500 dark:text-gray-400">
+            <ul class="font-medium text-gray-300">
               <li class="mb-4">
                 <a href="#" class="hover:underline">Privacy Policy</a>
               </li>
@@ -85,15 +84,15 @@ onMounted(() => {
         class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
       />
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 dark:text-gray-400 sm:text-center"
+        <span class="text-sm text-gray-300 sm:text-center"
           >© 2023
-          <a href="https://flowbite.com/" class="hover:underline">Awareness</a
-          >. All Rights Reserved.
+          <a href="https://flowbite.com/" class="hover:underline">Awareness</a>.
+          All Rights Reserved.
         </span>
         <div class="mt-4 flex sm:mt-0 sm:justify-center">
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-gray-500 hover:text-gray-300"
           >
             <svg
               class="h-4 w-4"
@@ -112,7 +111,7 @@ onMounted(() => {
           </a>
           <a
             href="#"
-            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="ms-5 text-gray-500 hover:text-gray-300"
           >
             <svg
               class="h-4 w-4"
@@ -129,7 +128,7 @@ onMounted(() => {
           </a>
           <a
             href="#"
-            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="ms-5 text-gray-500 hover:text-gray-300"
           >
             <svg
               class="h-4 w-4"
@@ -148,7 +147,7 @@ onMounted(() => {
           </a>
           <a
             href="#"
-            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="ms-5 text-gray-500 hover:text-gray-300"
           >
             <svg
               class="h-4 w-4"
@@ -167,7 +166,7 @@ onMounted(() => {
           </a>
           <a
             href="#"
-            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="ms-5 text-gray-500 hover:text-gray-300"
           >
             <svg
               class="h-4 w-4"

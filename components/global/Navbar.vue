@@ -1,15 +1,14 @@
 <script setup>
 import { initFlowbite } from "flowbite";
 import { onMounted } from "vue";
+import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 
 onMounted(() => {
   initFlowbite();
 });
 </script>
 <template>
-  <nav
-    class="fixed z-50 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900"
-  >
+  <nav class="fixed z-50 w-full border-b border-gray-200 bg-white">
     <div
       class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
     >
@@ -24,31 +23,49 @@ onMounted(() => {
           >Awareness</span
         >
       </NuxtLink>
-      <button
-        data-collapse-toggle="navbar-dropdown"
-        type="button"
-        class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-        aria-controls="navbar-dropdown"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="h-5 w-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
+      <div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+        <button
+          data-modal-target="default-modal"
+          data-modal-toggle="default-modal"
+          type="button"
+          class="group rounded-xl bg-gray-800 px-3 py-2 text-gray-50 hover:bg-gray-900"
         >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <div class="flex items-center gap-7">
+            <span class="text-sm font-bold">Talk To Us</span>
+            <ArrowRightIcon
+              class="h-7 w-7 rounded-full bg-gray-100 p-1 text-gray-900 group-hover:bg-gray-200"
+            />
+          </div>
+        </button>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
+        id="navbar-dropdown"
+      >
         <ul
           class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
         >

@@ -4,7 +4,7 @@
       class="mx-auto flex max-w-screen-xl flex-col items-center justify-between py-4 sm:flex-row"
     >
       <NuxtImg
-        class="h-96 w-full max-w-full rounded-br-3xl rounded-tl-3xl object-cover"
+        class="h-96 bg-gray-100 w-full max-w-full rounded-br-3xl rounded-tl-3xl object-cover"
         src="/group.jpg"
         alt=""
       />

@@ -2,9 +2,9 @@
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:pb-0 sm:pt-12">
+  <div class="w-full pb-10 pt-10 sm:pb-0 sm:pt-20">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-between py-4 sm:flex-row"
+      class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 py-4"
     >
       <div class="flex flex-col gap-4 sm:w-[50%] sm:gap-16">
         <div class="flex w-full flex-col gap-6">
@@ -17,9 +17,9 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
         </div>
         <div>
           <button
-          data-modal-target="default-modal"
-          data-modal-toggle="default-modal"
-          type="button"
+            data-modal-target="default-modal"
+            data-modal-toggle="default-modal"
+            type="button"
             class="group rounded-xl bg-gray-800 px-4 py-3 text-gray-50 hover:bg-gray-900"
           >
             <div class="flex items-center gap-7">

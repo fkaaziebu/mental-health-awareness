@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  mentalhealth-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    ports:
+      - 4000:3000
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+
+      - type: bind
+        source: ./nuxt.config.ts
+        target: /app/nuxt.config.ts
+        
+      - type: volume
+        target: /app/node_modules

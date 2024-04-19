@@ -3,7 +3,7 @@ import { ArrowUpIcon } from "@heroicons/vue/24/outline";
 const is_positive_percent = ref(true);
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:py-10">
+  <div class="w-full pb-10 pt-10 sm:py-10 bg-gray-50">
     <div
       class="mx-auto flex max-w-screen-xl flex-col items-center justify-between py-4 sm:flex-row"
     >

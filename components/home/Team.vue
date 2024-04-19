@@ -21,7 +21,7 @@ onMounted(() => {
             <div class="flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full rounded-lg object-cover"
+                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
                   src="/person.jpg"
                   alt=""
                 />
@@ -36,7 +36,7 @@ onMounted(() => {
             <div class="flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full rounded-lg object-cover"
+                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
                   src="/person-2.jpg"
                   alt=""
                 />
@@ -51,7 +51,7 @@ onMounted(() => {
             <div class="flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full rounded-lg object-cover"
+                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
                   src="/person-3.jpg"
                   alt=""
                 />
@@ -66,7 +66,7 @@ onMounted(() => {
             <div class="flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full rounded-lg object-cover"
+                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
                   src="/person-4.jpg"
                   alt=""
                 />
@@ -81,7 +81,7 @@ onMounted(() => {
             <div class="flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full rounded-lg object-cover"
+                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
                   src="/person-5.jpg"
                   alt=""
                 />
@@ -96,7 +96,7 @@ onMounted(() => {
             <div class="flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full rounded-lg object-cover"
+                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
                   src="/person-6.jpg"
                   alt=""
                 />

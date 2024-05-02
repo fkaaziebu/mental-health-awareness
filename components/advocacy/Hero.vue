@@ -2,7 +2,7 @@
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:pb-0 sm:pt-20">
+  <div class="w-full pb-10 pt-10 sm:pb-0 sm:pt-28">
     <div
       class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 py-4"
     >
@@ -17,10 +17,9 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
         </div>
         <div>
           <button
-            data-modal-target="default-modal"
-            data-modal-toggle="default-modal"
             type="button"
             class="group rounded-xl bg-gray-800 px-4 py-3 text-gray-50 hover:bg-gray-900"
+            @click="navigateTo('/contact-us')"
           >
             <div class="flex items-center gap-7">
               <span class="text-lg font-bold">Talk To Us</span>
@@ -33,7 +32,7 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
       </div>
       <div class="flex h-full text-right sm:w-[50%]">
         <Vue3Lottie
-          :animationLink="`https://lottie.host/6d4f4737-6519-4269-ae43-3372d258781a/gFeQbtJuJU.json`"
+          :animationLink="`https://lottie.host/cbe98524-ad01-497b-a461-552e66668596/4ldA1nWGUf.json`"
           :width="`80%`"
         />
       </div>

@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 <template>
   <footer class="bg-gray-900 text-gray-100">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:pt-20 lg:pb-10 mt-10">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:pt-20 lg:pb-10">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center">

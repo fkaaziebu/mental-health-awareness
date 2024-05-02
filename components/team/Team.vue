@@ -7,9 +7,9 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="mt-10 w-full">
+  <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 p-4"
+      class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 pb-16 pt-4"
     >
       <div class="flex w-full flex-col gap-5 sm:gap-8">
         <h2 class="font-semibold text-blue-700">Meet the Team</h2>

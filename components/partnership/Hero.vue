@@ -21,7 +21,7 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
             class="group rounded-xl bg-gray-800 px-4 py-3 text-gray-50 hover:bg-gray-900"
             @click="navigateTo('/contact-us')"
           >
-            <div class="flex items-center gap-7">
+            <div class="flex items-center gap-5">
               <span class="text-lg font-bold">Talk To Us</span>
               <ArrowRightIcon
                 class="h-9 w-9 rounded-full bg-gray-100 p-2 text-gray-900 group-hover:bg-gray-200"
@@ -32,7 +32,7 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
       </div>
       <div class="flex h-full text-right sm:w-[50%]">
         <Vue3Lottie
-          :animationLink="`https://lottie.host/5567fa42-7798-44c7-8743-8f5fee317f14/PL1tZq9kG1.json`"
+          :animationLink="`https://lottie.host/8f66c3e8-7f18-4654-b045-fb378a390146/RqdmtJDYOS.json`"
           :width="`80%`"
         />
       </div>

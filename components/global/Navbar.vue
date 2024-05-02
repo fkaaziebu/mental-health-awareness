@@ -2,6 +2,7 @@
 import { initFlowbite } from "flowbite";
 import { onMounted } from "vue";
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+import { HeartIcon } from "@heroicons/vue/24/solid";
 
 onMounted(() => {
   initFlowbite();
@@ -28,13 +29,11 @@ onMounted(() => {
           data-modal-target="default-modal"
           data-modal-toggle="default-modal"
           type="button"
-          class="group rounded-xl bg-gray-800 px-3 py-2 text-gray-50 hover:bg-gray-900"
+          class="group rounded-full bg-green-300 px-5 py-2 hover:bg-green-400"
         >
-          <div class="flex items-center gap-7">
-            <span class="text-sm font-bold">Talk To Us</span>
-            <ArrowRightIcon
-              class="h-7 w-7 rounded-full bg-gray-100 p-1 text-gray-900 group-hover:bg-gray-200"
-            />
+          <div class="flex items-center gap-2">
+            <HeartIcon class="h-5 w-5 text-green-700" />
+            <span class="text-sm font-bold">Donate</span>
           </div>
         </button>
         <button
@@ -78,12 +77,19 @@ onMounted(() => {
             >
           </li>
           <li>
+            <NuxtLink
+              to="/about-us"
+              class="block rounded px-3 py-2 hover:bg-gray-100 hover:text-blue-700 md:border-0 md:p-0 md:hover:bg-transparent"
+              >About Us</NuxtLink
+            >
+          </li>
+          <li>
             <button
               id="dropdownNavbarLink"
               data-dropdown-toggle="dropdownNavbar"
               class="flex w-full items-center justify-between rounded px-3 py-2 hover:bg-gray-100 hover:text-blue-700 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
             >
-              Contact
+              Activities
               <svg
                 class="ms-2.5 h-2.5 w-2.5"
                 aria-hidden="true"
@@ -111,23 +117,16 @@ onMounted(() => {
               >
                 <li>
                   <NuxtLink
-                    to="/leadership"
+                    to="/outreach"
                     class="block px-4 py-2 hover:bg-gray-100"
-                    >Leadership</NuxtLink
+                    >Outreach</NuxtLink
                   >
                 </li>
                 <li>
                   <NuxtLink
-                    to="/social-media"
+                    to="/advocacy"
                     class="block px-4 py-2 hover:bg-gray-100"
-                    >Social Media</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink
-                    to="/regional-contacts"
-                    class="block px-4 py-2 hover:bg-gray-100"
-                    >Regional Contacts</NuxtLink
+                    >Advocacy</NuxtLink
                   >
                 </li>
               </ul>
@@ -135,9 +134,16 @@ onMounted(() => {
           </li>
           <li>
             <NuxtLink
-              to="/activities"
+              to="/partnership"
               class="block rounded px-3 py-2 hover:bg-gray-100 hover:text-blue-700 md:border-0 md:p-0 md:hover:bg-transparent"
-              >Activities</NuxtLink
+              >Partnership</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/team"
+              class="block rounded px-3 py-2 hover:bg-gray-100 hover:text-blue-700 md:border-0 md:p-0 md:hover:bg-transparent"
+              >Our Team</NuxtLink
             >
           </li>
           <li>
@@ -149,16 +155,9 @@ onMounted(() => {
           </li>
           <li>
             <NuxtLink
-              to="/advocacy"
+              to="/contact-us"
               class="block rounded px-3 py-2 hover:bg-gray-100 hover:text-blue-700 md:border-0 md:p-0 md:hover:bg-transparent"
-              >Advocacy</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/about-us"
-              class="block rounded px-3 py-2 hover:bg-gray-100 hover:text-blue-700 md:border-0 md:p-0 md:hover:bg-transparent"
-              >About Us</NuxtLink
+              >Contact Us</NuxtLink
             >
           </li>
         </ul>

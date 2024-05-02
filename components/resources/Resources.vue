@@ -2,7 +2,7 @@
 import { ArrowDownTrayIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:pb-0 sm:pt-4">
+  <div class="w-full pb-10 pt-10 sm:pb-16 sm:pt-4">
     <div
       class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-10 py-4 sm:flex-col"
     >

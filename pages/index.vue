@@ -4,8 +4,12 @@ import { onMounted } from "vue";
 
 // Components
 import Hero from "~/components/home/Hero";
+import History from "~/components/home/History";
 import VisionMission from "~/components/home/VisionMission";
-import Team from "~/components/home/Team";
+import Activities from "~/components/home/Activities";
+import Partnership from "~/components/home/Partnership";
+import Services from "~/components/home/Services";
+import Donate from "~/components/global/Donate";
 
 onMounted(() => {
   initFlowbite();
@@ -14,7 +18,11 @@ onMounted(() => {
 <template>
   <div>
     <Hero />
+    <HomeHistory />
     <VisionMission />
-    <Team />
+    <Activities />
+    <Donate />
+    <Services />
+    <Partnership />
   </div>
 </template>

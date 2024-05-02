@@ -1,3 +1,6 @@
+<script setup>
+import { HeartIcon } from "@heroicons/vue/24/solid";
+</script>
 <template>
   <div
     id="default-modal"
@@ -13,7 +16,10 @@
           class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
         >
           <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-            Terms of Service
+            <div class="flex items-center gap-4">
+              <span>Donate To Support Us</span>
+              <HeartIcon class="h-5 w-5 text-red-500" />
+            </div>
           </h3>
           <button
             type="button"
@@ -41,6 +47,27 @@
         <!-- Modal body -->
         <div class="space-y-4 p-4 md:p-5">
           <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis aut vitae provident mollitia quaerat ducimus accusamus
+            officiis porro esse saepe.
+          </p>
+          <div class="flex justify-between">
+            <h3 class="text-lg font-medium">Our Momo Number:</h3>
+            <div
+              class="rounded-md border border-gray-500 px-3 py-2 text-sm font-bold"
+            >
+              (+233) 55 081 5604
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <h3 class="text-lg font-medium">Our GTBank Account No:</h3>
+            <div
+              class="rounded-md border border-gray-500 px-3 py-2 text-sm font-bold"
+            >
+              1345-6790-3469-7803
+            </div>
+          </div>
+          <!-- <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
             With less than a month to go before the European Union enacts new
             consumer privacy laws for its citizens, companies around the world
             are updating their terms of service agreements to comply.
@@ -51,25 +78,25 @@
             data rights in the European Union. It requires organizations to
             notify users as soon as possible of high-risk data breaches that
             could personally affect them.
-          </p>
+          </p> -->
         </div>
         <!-- Modal footer -->
         <div
           class="flex items-center rounded-b border-t border-gray-200 p-4 dark:border-gray-600 md:p-5"
         >
-          <button
+          <!-- <button
             data-modal-hide="default-modal"
             type="button"
             class="rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             I accept
-          </button>
+          </button> -->
           <button
             data-modal-hide="default-modal"
             type="button"
             class="ms-3 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
           >
-            Decline
+            Close
           </button>
         </div>
       </div>

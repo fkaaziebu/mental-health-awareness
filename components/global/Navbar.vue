@@ -10,13 +10,16 @@ import { HeartIcon } from "@heroicons/vue/24/solid";
 import { useNavbar } from "~/composables/useNavbar.js";
 import { useModal } from "~/composables/useModal.js";
 import { useActivePage } from "~/composables/useActivePage.js";
+import { useDropdown } from "~/composables/useDropdown.js";
 const { initNavbar, navbarInstance } = useNavbar();
 const { modalInstance } = useModal();
 const { activePage, updateActivePage } = useActivePage();
+const { initDropdown, dropdownInstance } = useDropdown();
 
 onMounted(() => {
   initNavbar("navbarTarget", "navbarTrigger");
-  updateActivePage(window.location.pathname)
+  initDropdown("dropdownTarget", "dropdownTrigger");
+  updateActivePage(window.location.pathname);
 });
 </script>
 <template>
@@ -88,14 +91,15 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[updateActivePage('/about-us'), navbarInstance.collapse()]"
+              @click="
+                [updateActivePage('/about-us'), navbarInstance.collapse()]
+              "
               >About Us</NuxtLink
             >
           </li>
           <li>
             <button
-              id="dropdownNavbarLink"
-              data-dropdown-toggle="dropdownNavbar"
+              id="dropdownTrigger"
               class="flex w-full items-center justify-between rounded px-3 py-2 lg:w-auto lg:border-0 lg:px-2 lg:py-1"
             >
               <div class="flex items-center gap-2">
@@ -105,7 +109,7 @@ onMounted(() => {
             </button>
             <!-- Dropdown menu -->
             <div
-              id="dropdownNavbar"
+              id="dropdownTarget"
               class="z-10 hidden w-[87%] divide-y divide-gray-100 rounded-lg bg-white font-normal shadow dark:divide-gray-600 dark:bg-gray-700 sm:w-44"
             >
               <ul
@@ -174,7 +178,9 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[updateActivePage('/resources'), navbarInstance.collapse()]"
+              @click="
+                [updateActivePage('/resources'), navbarInstance.collapse()]
+              "
               >Resources</NuxtLink
             >
           </li>
@@ -187,7 +193,9 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[updateActivePage('/contact-us'), navbarInstance.collapse()]"
+              @click="
+                [updateActivePage('/contact-us'), navbarInstance.collapse()]
+              "
               >Contact Us</NuxtLink
             >
           </li>

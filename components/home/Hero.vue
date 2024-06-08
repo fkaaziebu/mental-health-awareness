@@ -1,5 +1,9 @@
 <script setup>
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+
+// Composable
+import { useActivePage } from "~/composables/useActivePage.js";
+const { updateActivePage } = useActivePage();
 </script>
 <template>
   <div
@@ -13,7 +17,7 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
       <div
         class="mx-auto flex h-full w-full max-w-screen-xl items-center justify-between gap-5 py-4"
       >
-        <div class="w-full xl:pb-20 lg:mt-auto">
+        <div class="w-full lg:mt-auto xl:pb-20">
           <div
             class="flex w-full flex-col items-start justify-between gap-10 lg:flex-row lg:items-center"
           >
@@ -32,7 +36,9 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
               <button
                 type="button"
                 class="lg:h-15 group h-full rounded-xl bg-blue-900 px-2 py-1.5 text-gray-50 hover:bg-blue-800 md:px-4 md:py-3"
-                @click="navigateTo('/contact-us')"
+                @click="
+                  [updateActivePage('/contact-us'), navigateTo('/contact-us')]
+                "
               >
                 <div class="flex items-center gap-4 sm:gap-7">
                   <span class="font-semibold sm:text-lg md:font-bold"

@@ -8,15 +8,15 @@ import { HeartIcon } from "@heroicons/vue/24/solid";
 
 // Composable
 import { useNavbar } from "~/composables/useNavbar.js";
-import { useModal } from "~/composables/useModal";
+import { useModal } from "~/composables/useModal.js";
+import { useActivePage } from "~/composables/useActivePage.js";
 const { initNavbar, navbarInstance } = useNavbar();
 const { modalInstance } = useModal();
-
-const activePage = ref("");
+const { activePage, updateActivePage } = useActivePage();
 
 onMounted(() => {
   initNavbar("navbarTarget", "navbarTrigger");
-  activePage.value = window.location.pathname;
+  updateActivePage(window.location.pathname)
 });
 </script>
 <template>
@@ -51,7 +51,7 @@ onMounted(() => {
         <button
           id="navbarTrigger"
           type="button"
-          class="inline-flex items-center justify-center rounded-lg p-1 text-sm text-gray-100 focus:outline-none focus:ring-2 hover:bg-gray-950 focus:ring-gray-950 lg:hidden"
+          class="inline-flex items-center justify-center rounded-lg p-1 text-sm text-gray-100 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-gray-950 lg:hidden"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
@@ -74,7 +74,7 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[(activePage = '/'), navbarInstance.collapse()]"
+              @click="[updateActivePage('/'), navbarInstance.collapse()]"
               aria-current="page"
               >Home</NuxtLink
             >
@@ -88,7 +88,7 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[(activePage = '/about-us'), navbarInstance.collapse()]"
+              @click="[updateActivePage('/about-us'), navbarInstance.collapse()]"
               >About Us</NuxtLink
             >
           </li>
@@ -116,13 +116,9 @@ onMounted(() => {
                   <NuxtLink
                     to="/outreach"
                     class="block px-4 py-2 hover:bg-gray-100"
-                    :class="
-                      activePage === '/outreach'
-                        ? 'font-bold'
-                        : ''
-                    "
+                    :class="activePage === '/outreach' ? 'font-bold' : ''"
                     @click="
-                      [(activePage = '/outreach'), navbarInstance.collapse()]
+                      [updateActivePage('/outreach'), navbarInstance.collapse()]
                     "
                     >Outreach</NuxtLink
                   >
@@ -131,13 +127,9 @@ onMounted(() => {
                   <NuxtLink
                     to="/advocacy"
                     class="block px-4 py-2 hover:bg-gray-100"
-                    :class="
-                      activePage === '/advocacy'
-                        ? 'font-bold'
-                        : ''
-                    "
+                    :class="activePage === '/advocacy' ? 'font-bold' : ''"
                     @click="
-                      [(activePage = '/advocacy'), navbarInstance.collapse()]
+                      [updateActivePage('/advocacy'), navbarInstance.collapse()]
                     "
                     >Advocacy</NuxtLink
                   >
@@ -155,7 +147,7 @@ onMounted(() => {
                   : ''
               "
               @click="
-                [(activePage = '/partnership'), navbarInstance.collapse()]
+                [updateActivePage('/partnership'), navbarInstance.collapse()]
               "
               >Partnership</NuxtLink
             >
@@ -169,7 +161,7 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[(activePage = '/team'), navbarInstance.collapse()]"
+              @click="[updateActivePage('/team'), navbarInstance.collapse()]"
               >Our Team</NuxtLink
             >
           </li>
@@ -182,7 +174,7 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[(activePage = '/resources'), navbarInstance.collapse()]"
+              @click="[updateActivePage('/resources'), navbarInstance.collapse()]"
               >Resources</NuxtLink
             >
           </li>
@@ -195,7 +187,7 @@ onMounted(() => {
                   ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
                   : ''
               "
-              @click="[(activePage = '/contact-us'), navbarInstance.collapse()]"
+              @click="[updateActivePage('/contact-us'), navbarInstance.collapse()]"
               >Contact Us</NuxtLink
             >
           </li>

@@ -13,10 +13,10 @@
         </h3>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-4">
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex flex-col gap-5">
+            <div class="w-full flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
+                  class="bg-gray-100 rounded-lg object-cover"
                   src="/person.jpg"
                   alt=""
                 />
@@ -28,11 +28,11 @@
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex flex-col gap-5">
+            <div class="w-full flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
-                  src="/person-2.jpg"
+                  class="bg-gray-100 rounded-lg object-cover"
+                  src="/person.jpg"
                   alt=""
                 />
               </div>
@@ -43,11 +43,11 @@
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex flex-col gap-5">
+            <div class="w-full flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
-                  src="/person-3.jpg"
+                  class="bg-gray-100 rounded-lg object-cover"
+                  src="/person.jpg"
                   alt=""
                 />
               </div>
@@ -58,11 +58,11 @@
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex flex-col gap-5">
+            <div class="w-full flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
-                  src="/person-4.jpg"
+                  class="bg-gray-100 rounded-lg object-cover"
+                  src="/person.jpg"
                   alt=""
                 />
               </div>
@@ -73,11 +73,11 @@
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex flex-col gap-5">
+            <div class="w-full flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
-                  src="/person-5.jpg"
+                  class="bg-gray-100 rounded-lg object-cover"
+                  src="/person.jpg"
                   alt=""
                 />
               </div>
@@ -88,11 +88,11 @@
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex flex-col gap-5">
+            <div class="w-full flex flex-col gap-5">
               <div>
                 <NuxtImg
-                  class="h-60 w-full max-w-full bg-gray-100 rounded-lg object-cover"
-                  src="/person-6.jpg"
+                  class="bg-gray-100 rounded-lg object-cover"
+                  src="/person.jpg"
                   alt=""
                 />
               </div>

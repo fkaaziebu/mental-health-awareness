@@ -10,7 +10,7 @@ const is_positive_percent = ref(true);
       <div
         v-for="i in 4"
         :key="i"
-        class="group flex flex-col items-start gap-1 rounded-md border px-6 py-5 md:border-l md:border-l-gray-200 md:hover:border-l-green-300 md:hover:bg-gray-100"
+        class="group flex w-full items-center justify-between gap-1 rounded-md border px-6 py-5 md:w-auto md:flex-col md:items-start md:justify-normal md:border-l md:border-l-gray-200 md:hover:border-l-green-300 md:hover:bg-gray-100"
       >
         <div class="flex items-center gap-5">
           <span class="text-2xl font-semibold">13,556</span>

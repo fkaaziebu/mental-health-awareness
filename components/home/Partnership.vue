@@ -16,10 +16,10 @@ import {
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col justify-between gap-6 py-16"
+      class="mx-auto flex max-w-screen-xl flex-col justify-between gap-6 py-16 px-5 2xl:px-0"
     >
       <h1 class="text-2xl font-semibold">Our Partners</h1>
-      <div class="flex items-center justify-between">
+      <div class="grid grid-cols-4 md:grid-cols-4 gap-2">
         <div class="rounded-2xl bg-blue-900 p-8 cursor-pointer">
           <LinkIcon class="h-8 w-8 text-gray-100" />
         </div>

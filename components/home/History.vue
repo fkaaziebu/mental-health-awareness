@@ -4,7 +4,7 @@ import { MinusIcon } from "@heroicons/vue/24/outline";
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-6 py-16"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-6 px-5 py-16 2xl:px-0"
     >
       <div class="flex w-full flex-col items-center gap-3">
         <div class="flex w-full items-center justify-center gap-2">

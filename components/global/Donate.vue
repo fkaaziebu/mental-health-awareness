@@ -9,7 +9,7 @@ defineProps({
 <template>
   <div class="w-full bg-gray-100">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col justify-between gap-12 pb-16 pt-16"
+      class="mx-auto flex max-w-screen-xl flex-col justify-between gap-12 px-5 pb-16 pt-16 2xl:px-0"
       v-bind="$attrs"
     >
       <div class="flex flex-col items-center justify-center gap-10">

@@ -2,12 +2,12 @@
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:py-10 sm:pb-16">
+  <div class="w-full px-5 pb-10 md:py-10 sm:pb-16 2xl:px-0">
     <div
-      class="mx-auto flex max-w-screen-xl items-center justify-between gap-20 py-4"
+      class="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-between gap-10 py-4 lg:flex-row lg:gap-20"
     >
       <div class="flex w-full flex-col gap-14">
-        <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-8 md:gap-4 lg:gap-8">
           <h2 class="text-xl font-bold">Our Mission Statement</h2>
           <p class="text-gray-600">
             We're just getting started but our sleeves are rolled up, and we're
@@ -22,7 +22,7 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
       </div>
       <div class="w-full">
         <NuxtImg
-          class="ml-auto h-60 border border-gray-500 bg-gray-100 object-cover"
+          class="ml-auto h-60 w-full lg:w-auto border border-gray-500 bg-gray-100 object-cover"
           src="/group.jpg"
           alt=""
         />

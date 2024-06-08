@@ -4,7 +4,6 @@ import { onMounted } from "vue";
 
 // Components
 import Hero from "~/components/about-us/Hero.vue";
-import Main from "~/components/about-us/Main.vue";
 import History from "~/components/about-us/History.vue";
 import Mission from "~/components/about-us/Mission.vue";
 import Vission from "~/components/about-us/Vission.vue";

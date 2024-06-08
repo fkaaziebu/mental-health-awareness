@@ -15,7 +15,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
             <div class="relative">
               <NuxtImg
                 class="h-full w-full max-w-full rounded-lg bg-gray-100 object-cover"
-                src="/person.jpg"
+                src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                 alt=""
               />
               <div
@@ -47,7 +47,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
             <div class="relative">
               <NuxtImg
                 class="h-full w-full max-w-full rounded-lg bg-gray-100 object-cover"
-                src="/person.jpg"
+                src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                 alt=""
               />
               <div
@@ -79,7 +79,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
             <div class="relative">
               <NuxtImg
                 class="h-full w-full max-w-full rounded-lg bg-gray-100 object-cover"
-                src="/person.jpg"
+                src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                 alt=""
               />
               <div
@@ -111,7 +111,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
             <div class="relative">
               <NuxtImg
                 class="h-full w-full max-w-full rounded-lg bg-gray-100 object-cover"
-                src="/person.jpg"
+                src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                 alt=""
               />
               <div

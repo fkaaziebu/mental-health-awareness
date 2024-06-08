@@ -10,7 +10,7 @@ const { updateActivePage } = useActivePage();
     class="relative w-full pb-10 pt-10 sm:pb-0 sm:pt-12"
     style="height: 80vh"
   >
-    <NuxtImg src="./group.jpg" class="h-full w-full object-cover" />
+    <NuxtImg src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/group.jpg" class="h-full w-full object-cover" />
     <div
       class="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-opacity-50 bg-gradient-to-b from-transparent to-gray-900 px-5"
     >

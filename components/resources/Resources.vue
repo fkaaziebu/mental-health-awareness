@@ -11,10 +11,15 @@ import { ArrowDownTrayIcon } from "@heroicons/vue/24/outline";
           An ever-growing list of resources
         </h1>
       </div>
-      <div class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div
+        class="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+      >
         <div v-for="i in 7" :key="i" class="w-full rounded-md border p-2">
           <div class="flex flex-col gap-5">
-            <NuxtImg src="/person.jpg" class="rounded-md object-cover" />
+            <NuxtImg
+              src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
+              class="rounded-md object-cover"
+            />
             <div class="flex flex-col gap-3">
               <h2 class="text-lg font-semibold">Mental Health Awareness</h2>
               <p class="text-sm text-gray-500">

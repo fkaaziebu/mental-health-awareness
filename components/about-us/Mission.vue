@@ -23,7 +23,7 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
       <div class="w-full">
         <NuxtImg
           class="ml-auto h-60 w-full lg:w-auto border border-gray-500 bg-gray-100 object-cover"
-          src="/group.jpg"
+          src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/group.jpg"
           alt=""
         />
       </div>

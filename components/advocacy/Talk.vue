@@ -2,9 +2,9 @@
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:pb-0 sm:py-10">
+  <div class="w-full pb-10 pt-10 sm:py-10 px-5 2xl:px-0">
     <div
-      class="mx-auto flex max-w-screen-xl items-center justify-between gap-20 py-4"
+      class="mx-auto flex flex-col-reverse lg:flex-row max-w-screen-xl items-center justify-between gap-20 py-4"
     >
       <div class="flex w-full flex-col gap-14">
         <div class="flex flex-col gap-8">

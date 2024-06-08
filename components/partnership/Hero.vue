@@ -2,14 +2,16 @@
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:pb-0 sm:pt-28">
+  <div class="w-full px-5 pt-10 sm:pb-0 md:pt-20 lg:pt-28 xl:pt-20 2xl:px-0">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-between py-4 sm:flex-row"
+      class="mx-auto flex max-w-screen-xl flex-col-reverse justify-between py-4 md:flex-row md:items-center"
     >
-      <div class="flex flex-col gap-4 sm:w-[50%] sm:gap-16">
-        <div class="flex w-full flex-col gap-6">
-          <h2 class="text-6xl text-blue-700">Real Life Advice</h2>
-          <p class="text-2xl font-bold sm:text-6xl">Brilliantly Simplified</p>
+      <div class="flex flex-col gap-8 md:w-[50%] lg:gap-16">
+        <div class="flex w-full flex-col gap-3 lg:gap-6">
+          <h2 class="text-4xl text-blue-700 lg:text-6xl">Real Life Advice</h2>
+          <p class="text-2xl font-bold md:text-4xl lg:text-6xl">
+            Brilliantly Simplified
+          </p>
           <p class="mt-3 text-sm text-gray-500">
             Business Advice, Accounting, Wealth Management, Superannuation,
             Lending
@@ -21,7 +23,9 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
             class="group rounded-xl bg-gray-800 px-4 py-3 text-gray-50 hover:bg-gray-900"
             @click="navigateTo('/contact-us')"
           >
-            <div class="flex items-center gap-5">
+            <div
+              class="flex w-full items-center justify-between gap-7 md:w-auto md:justify-normal"
+            >
               <span class="text-lg font-bold">Talk To Us</span>
               <ArrowRightIcon
                 class="h-9 w-9 rounded-full bg-gray-100 p-2 text-gray-900 group-hover:bg-gray-200"
@@ -30,10 +34,10 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
           </button>
         </div>
       </div>
-      <div class="flex h-full text-right sm:w-[50%]">
+      <div class="flex w-full text-right md:h-60 md:w-[50%] lg:h-full">
         <Vue3Lottie
           :animationLink="`https://lottie.host/8f66c3e8-7f18-4654-b045-fb378a390146/RqdmtJDYOS.json`"
-          :width="`80%`"
+          :width="`100%`"
         />
       </div>
     </div>

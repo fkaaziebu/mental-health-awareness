@@ -16,75 +16,75 @@ import {
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col justify-between gap-6 py-16"
+      class="mx-auto flex max-w-screen-xl flex-col justify-between gap-6 px-5 py-16 2xl:px-0"
     >
       <h1 class="text-2xl font-semibold">Our Partners</h1>
-      <div class="grid grid-cols-3 gap-5">
+      <div class="grid grid-cols-4 gap-2 md:grid-cols-4">
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <LinkIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Pepsodent</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Pepsodent</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <AcademicCapIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Colgate</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Colgate</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <BanknotesIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Joy TV</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Joy TV</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <BellIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white"> Rice Organization </span>
+          <span class="text-3xl text-white truncate hidden lg:block"> Rice Organization </span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <BugAntIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Sunny Walk</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Sunny Walk</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CalendarIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Hisense</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Hisense</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CameraIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Techno</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Techno</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CircleStackIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Samsung</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Samsung</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CloudIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Huawei Mobile</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Huawei Mobile</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CpuChipIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Chromium</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Chromium</span>
         </div>
         <div
-          class="flex cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CursorArrowRippleIcon class="h-8 w-8 text-gray-100" />
-          <span class="text-3xl text-white">Brilliantly</span>
+          <span class="text-3xl text-white truncate hidden lg:block">Brilliantly</span>
         </div>
       </div>
     </div>

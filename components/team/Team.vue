@@ -9,14 +9,14 @@ onMounted(() => {
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 pb-16 pt-4"
+      class="mx-auto flex max-w-screen-xl items-center justify-between gap-5 pb-16 pt-10 px-5 2xl:px-0"
     >
       <div class="flex w-full flex-col gap-5 sm:gap-8">
         <h2 class="font-semibold text-blue-700">Meet the Team</h2>
         <h3 class="sm:w-[50%] text-2xl font-semibold">
           Meet Our Dedicated Team of Educators and Innovators
         </h3>
-        <div class="grid sm:grid-cols-3 items-center justify-center gap-4">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-4">
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
             <div class="flex flex-col gap-5">
               <div>

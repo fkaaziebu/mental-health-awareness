@@ -7,9 +7,9 @@ import {
 } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:py-10 bg-gray-50">
+  <div class="w-full bg-gray-50 px-5 pb-10 pt-10 sm:py-10 2xl:px-0">
     <div
-      class="mx-auto flex max-w-screen-xl flex-row items-center justify-between gap-10 py-4 sm:flex-col"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-10 py-4"
     >
       <div class="flex w-full items-center justify-between border-b pb-6">
         <h1 class="w-full text-2xl font-bold">Our Guiding Principles</h1>
@@ -18,9 +18,9 @@ import {
           pillars that support tht relationship.
         </p>
       </div>
-      <div class="flex w-full items-center">
+      <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
         <div
-          class="flex w-full flex-col items-center gap-6 border-l border-r p-5 text-center first:border-l-0 last:border-r-0"
+          class="flex w-full flex-col items-center gap-6 rounded-md border p-5 text-center"
         >
           <div class="flex flex-col items-center justify-center gap-2">
             <AcademicCapIcon class="h-10 w-10" />
@@ -33,7 +33,7 @@ import {
           </div>
         </div>
         <div
-          class="flex w-full flex-col items-center gap-6 border-l border-r p-5 text-center first:border-l-0 last:border-r-0"
+          class="flex w-full flex-col items-center gap-6 rounded-md border p-5 text-center"
         >
           <div class="flex flex-col items-center justify-center gap-2">
             <BanknotesIcon class="h-10 w-10" />
@@ -46,7 +46,7 @@ import {
           </div>
         </div>
         <div
-          class="flex w-full flex-col items-center gap-6 border-l border-r p-5 text-center first:border-l-0 last:border-r-0"
+          class="flex w-full flex-col items-center gap-6 rounded-md border p-5 text-center"
         >
           <div class="flex flex-col items-center justify-center gap-2">
             <BriefcaseIcon class="h-10 w-10" />
@@ -59,7 +59,7 @@ import {
           </div>
         </div>
         <div
-          class="flex w-full flex-col items-center gap-6 border-l border-r p-5 text-center first:border-l-0 last:border-r-0"
+          class="flex w-full flex-col items-center gap-6 rounded-md border p-5 text-center"
         >
           <div class="flex flex-col items-center justify-center gap-2">
             <BugAntIcon class="h-10 w-10" />

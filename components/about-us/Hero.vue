@@ -34,7 +34,6 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
         <Vue3Lottie
           :animationLink="`https://lottie.host/5567fa42-7798-44c7-8743-8f5fee317f14/PL1tZq9kG1.json`"
           :width="`100%`"
-          class="w-full"
         />
       </div>
     </div>

@@ -1,19 +1,16 @@
 <script setup>
-import { initFlowbite } from "flowbite";
-import { onMounted } from "vue";
-
 // Components
 import Navbar from "~/components/global/Navbar.vue";
 import Footer from "~/components/global/Footer.vue";
 import Modal from "~/components/global/Modal.vue";
 
-onMounted(() => {
-  initFlowbite();
-});
+// Composable
+import { useNavbar } from "~/composables/useNavbar.js";
+const { navbarInstance } = useNavbar();
 </script>
 <template>
   <Navbar />
-  <slot />
-  <Footer />
-  <Modal />
+  <div @click="navbarInstance.collapse()"><slot /></div>
+  <Footer @click="navbarInstance.collapse()" />
+  <Modal @click="navbarInstance.collapse()" />
 </template>

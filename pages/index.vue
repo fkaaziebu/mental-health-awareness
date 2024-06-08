@@ -1,7 +1,4 @@
 <script setup>
-import { initFlowbite } from "flowbite";
-import { onMounted } from "vue";
-
 // Components
 import Hero from "~/components/home/Hero";
 import History from "~/components/home/History";
@@ -11,14 +8,11 @@ import Partnership from "~/components/home/Partnership";
 import Services from "~/components/home/Services";
 import Donate from "~/components/global/Donate";
 
-onMounted(() => {
-  initFlowbite();
-});
 </script>
 <template>
   <div>
     <Hero />
-    <HomeHistory />
+    <History />
     <VisionMission />
     <Activities />
     <Donate />

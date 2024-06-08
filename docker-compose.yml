@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile.dev
     restart: always
     ports:
-      - 4005:3000
+      - 4006:3000
     volumes:
       - type: bind
         source: .

@@ -1,5 +1,4 @@
 <script setup>
-import { initFlowbite } from "flowbite";
 import { onMounted } from "vue";
 import {
   Bars3BottomRightIcon,
@@ -7,8 +6,17 @@ import {
 } from "@heroicons/vue/24/outline";
 import { HeartIcon } from "@heroicons/vue/24/solid";
 
+// Composable
+import { useNavbar } from "~/composables/useNavbar.js";
+import { useModal } from "~/composables/useModal";
+const { initNavbar, navbarInstance } = useNavbar();
+const { modalInstance } = useModal();
+
+const activePage = ref("");
+
 onMounted(() => {
-  initFlowbite();
+  initNavbar("navbarTarget", "navbarTrigger");
+  activePage.value = window.location.pathname;
 });
 </script>
 <template>
@@ -16,7 +24,11 @@ onMounted(() => {
     <div
       class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-2 py-4"
     >
-      <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <NuxtLink
+        to="/"
+        class="flex items-center space-x-3 rtl:space-x-reverse"
+        @click="navbarInstance.collapse()"
+      >
         <img
           src="https://flowbite.com/docs/images/logo.svg"
           class="h-7"
@@ -27,10 +39,9 @@ onMounted(() => {
         class="flex items-center space-x-3 lg:order-2 lg:space-x-0 rtl:space-x-reverse"
       >
         <button
-          data-modal-target="default-modal"
-          data-modal-toggle="default-modal"
           type="button"
           class="group h-8 rounded-full bg-green-300 px-3 py-0 hover:bg-green-400 lg:h-full lg:px-5 lg:py-2"
+          @click="[navbarInstance.collapse(), modalInstance.show()]"
         >
           <div class="flex items-center gap-2">
             <HeartIcon class="h-4 w-4 text-green-700 sm:h-5 sm:w-5" />
@@ -38,10 +49,9 @@ onMounted(() => {
           </div>
         </button>
         <button
-          data-collapse-toggle="navbar-dropdown"
+          id="navbarTrigger"
           type="button"
-          class="inline-flex items-center justify-center rounded-lg p-1 text-sm text-gray-100 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-gray-950 lg:hidden"
-          aria-controls="navbar-dropdown"
+          class="inline-flex items-center justify-center rounded-lg p-1 text-sm text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-950 lg:hidden"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
@@ -50,7 +60,7 @@ onMounted(() => {
       </div>
       <div
         class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto"
-        id="navbar-dropdown"
+        id="navbarTarget"
       >
         <ul
           class="mt-4 flex flex-col rounded-lg border border-gray-900 bg-gray-900 p-4 font-medium text-gray-100 lg:mt-0 lg:flex-row lg:space-x-2 lg:border-0 lg:p-0 rtl:space-x-reverse"
@@ -58,7 +68,13 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/"
-              class="block rounded px-3 py-2 hover:bg-gray-950 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-3 py-2 lg:bg-transparent lg:px-2 lg:py-1"
+              :class="
+                activePage === '/'
+                  ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  : ''
+              "
+              @click="[(activePage = '/'), navbarInstance.collapse()]"
               aria-current="page"
               >Home</NuxtLink
             >
@@ -66,7 +82,13 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/about-us"
-              class="block rounded px-3 py-2 hover:bg-gray-950 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-3 py-2 lg:bg-transparent lg:px-2 lg:py-1"
+              :class="
+                activePage === '/about-us'
+                  ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  : ''
+              "
+              @click="[(activePage = '/about-us'), navbarInstance.collapse()]"
               >About Us</NuxtLink
             >
           </li>
@@ -74,7 +96,7 @@ onMounted(() => {
             <button
               id="dropdownNavbarLink"
               data-dropdown-toggle="dropdownNavbar"
-              class="flex w-full items-center justify-between rounded px-3 py-2 hover:bg-gray-950 lg:w-auto lg:border-0 lg:px-2 lg:py-1"
+              class="flex w-full items-center justify-between rounded px-3 py-2 lg:w-auto lg:border-0 lg:px-2 lg:py-1"
             >
               <div class="flex items-center gap-2">
                 <span>Activities</span>
@@ -94,6 +116,14 @@ onMounted(() => {
                   <NuxtLink
                     to="/outreach"
                     class="block px-4 py-2 hover:bg-gray-100"
+                    :class="
+                      activePage === '/outreach'
+                        ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                        : ''
+                    "
+                    @click="
+                      [(activePage = '/outreach'), navbarInstance.collapse()]
+                    "
                     >Outreach</NuxtLink
                   >
                 </li>
@@ -101,6 +131,14 @@ onMounted(() => {
                   <NuxtLink
                     to="/advocacy"
                     class="block px-4 py-2 hover:bg-gray-100"
+                    :class="
+                      activePage === '/advocacy'
+                        ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                        : ''
+                    "
+                    @click="
+                      [(activePage = '/advocacy'), navbarInstance.collapse()]
+                    "
                     >Advocacy</NuxtLink
                   >
                 </li>
@@ -110,28 +148,54 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/partnership"
-              class="block rounded px-3 py-2 hover:bg-gray-950 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-3 py-2 lg:bg-transparent lg:px-2 lg:py-1"
+              :class="
+                activePage === '/partnership'
+                  ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  : ''
+              "
+              @click="
+                [(activePage = '/partnership'), navbarInstance.collapse()]
+              "
               >Partnership</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
               to="/team"
-              class="block rounded px-3 py-2 hover:bg-gray-950 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-3 py-2 lg:bg-transparent lg:px-2 lg:py-1"
+              :class="
+                activePage === '/team'
+                  ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  : ''
+              "
+              @click="[(activePage = '/team'), navbarInstance.collapse()]"
               >Our Team</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
               to="/resources"
-              class="block rounded px-3 py-2 hover:bg-gray-950 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-3 py-2 lg:bg-transparent lg:px-2 lg:py-1"
+              :class="
+                activePage === '/resources'
+                  ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  : ''
+              "
+              @click="[(activePage = '/resources'), navbarInstance.collapse()]"
               >Resources</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
               to="/contact-us"
-              class="block rounded px-3 py-2 hover:bg-gray-950 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-3 py-2 lg:bg-transparent lg:px-2 lg:py-1"
+              :class="
+                activePage === '/contact-us'
+                  ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  : ''
+              "
+              @click="[(activePage = '/contact-us'), navbarInstance.collapse()]"
               >Contact Us</NuxtLink
             >
           </li>

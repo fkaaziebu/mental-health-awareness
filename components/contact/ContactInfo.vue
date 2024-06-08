@@ -1,12 +1,16 @@
 <script setup>
-import { EnvelopeIcon, PhoneIcon, ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/vue/24/outline";
+import {
+  EnvelopeIcon,
+  PhoneIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+} from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full bg-gray-200">
+  <div class="w-full bg-gray-200 px-5 2xl:px-0">
     <div
-      class="mx-auto flex h-full items-center w-full max-w-screen-xl justify-between gap-6 pb-16 pt-32"
+      class="mx-auto flex h-full w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:gap-6 pb-16 pt-32 lg:flex-row"
     >
-      <div class="flex w-[40%] flex-col gap-10">
+      <div class="flex flex-col gap-10 md:w-[70%] lg:w-[40%]">
         <div class="flex flex-col gap-5">
           <h1 class="text-5xl">Contact Us</h1>
           <p class="text-sm">
@@ -30,7 +34,9 @@ import { EnvelopeIcon, PhoneIcon, ChatBubbleOvalLeftEllipsisIcon } from "@heroic
           </div>
         </div>
       </div>
-      <div class="flex w-[50%] flex-col gap-10 rounded-lg bg-white px-6 py-8">
+      <div
+        class="flex w-full flex-col gap-10 rounded-lg bg-white px-6 py-8 md:w-[70%] lg:w-[50%]"
+      >
         <div>
           <h1 class="text-2xl font-medium">We'd love to hear from you!</h1>
           <h2 class="text-xl font-medium">Let's get in touch</h2>

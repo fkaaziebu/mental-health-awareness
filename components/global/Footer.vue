@@ -1,10 +1,5 @@
 <script setup>
-import { initFlowbite } from "flowbite";
-import { onMounted } from "vue";
 
-onMounted(() => {
-  initFlowbite();
-});
 </script>
 <template>
   <footer class="bg-gray-900 text-gray-100">

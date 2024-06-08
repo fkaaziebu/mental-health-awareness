@@ -2,7 +2,7 @@
 import { ArrowDownTrayIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:pb-16 sm:pt-4">
+  <div class="w-full px-5 pb-10 pt-10 sm:pb-16 sm:pt-4 2xl:px-0">
     <div
       class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-10 py-4 sm:flex-col"
     >
@@ -11,7 +11,7 @@ import { ArrowDownTrayIcon } from "@heroicons/vue/24/outline";
           An ever-growing list of resources
         </h1>
       </div>
-      <div class="grid w-full grid-cols-3 gap-10">
+      <div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div v-for="i in 7" :key="i" class="w-full rounded-md border p-2">
           <div class="flex flex-col gap-5">
             <NuxtImg src="/person.jpg" class="rounded-md object-cover" />

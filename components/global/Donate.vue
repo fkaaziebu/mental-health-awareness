@@ -1,5 +1,9 @@
 <script setup>
 import { HeartIcon } from "@heroicons/vue/24/solid";
+
+import { useModal } from "~/composables/useModal";
+const { modalInstance } = useModal();
+
 defineProps({
   class: {
     type: String,
@@ -25,10 +29,9 @@ defineProps({
       </div>
       <div class="flex items-center justify-center">
         <button
-          data-modal-target="default-modal"
-          data-modal-toggle="default-modal"
           type="button"
           class="rounded-2xl bg-green-300 px-5 py-2 hover:bg-green-400"
+          @click="modalInstance.show()"
         >
           <div class="flex items-center gap-2">
             <HeartIcon class="h-5 w-5 text-green-700" />

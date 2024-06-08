@@ -12,9 +12,6 @@
               class="me-3 h-8"
               alt="FlowBite Logo"
             />
-            <span class="self-center whitespace-nowrap text-2xl font-semibold"
-              >Awareness</span
-            >
           </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">

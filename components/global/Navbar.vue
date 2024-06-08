@@ -51,7 +51,7 @@ onMounted(() => {
         <button
           id="navbarTrigger"
           type="button"
-          class="inline-flex items-center justify-center rounded-lg p-1 text-sm text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-950 lg:hidden"
+          class="inline-flex items-center justify-center rounded-lg p-1 text-sm text-gray-100 focus:outline-none focus:ring-2 hover:bg-gray-950 focus:ring-gray-950 lg:hidden"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
@@ -118,7 +118,7 @@ onMounted(() => {
                     class="block px-4 py-2 hover:bg-gray-100"
                     :class="
                       activePage === '/outreach'
-                        ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                        ? 'font-bold'
                         : ''
                     "
                     @click="
@@ -133,7 +133,7 @@ onMounted(() => {
                     class="block px-4 py-2 hover:bg-gray-100"
                     :class="
                       activePage === '/advocacy'
-                        ? 'bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                        ? 'font-bold'
                         : ''
                     "
                     @click="

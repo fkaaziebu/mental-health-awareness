@@ -3,14 +3,14 @@ import { ArrowUpIcon } from "@heroicons/vue/24/outline";
 const is_positive_percent = ref(true);
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:py-10 bg-gray-50">
+  <div class="w-full bg-gray-50 px-5 pb-10 pt-10 sm:py-10 2xl:px-0">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between py-4 sm:flex-row"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-5 py-4 md:flex-row md:flex-wrap md:gap-0 md:gap-y-3"
     >
       <div
         v-for="i in 4"
         :key="i"
-        class="group flex w-full flex-col items-start gap-1 border-l border-l-gray-200 px-6 py-5 hover:border-l-green-300 hover:bg-gray-100"
+        class="group flex flex-col items-start gap-1 rounded-md border px-6 py-5 md:border-l md:border-l-gray-200 md:hover:border-l-green-300 md:hover:bg-gray-100"
       >
         <div class="flex items-center gap-5">
           <span class="text-2xl font-semibold">13,556</span>

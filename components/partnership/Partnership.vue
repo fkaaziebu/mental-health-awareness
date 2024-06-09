@@ -21,67 +21,67 @@ import {
       <h1 class="text-2xl font-semibold text-gray-900">Our Partners</h1>
       <div class="grid grid-cols-4 gap-2 md:grid-cols-4">
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <LinkIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Pepsodent</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <AcademicCapIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Colgate</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <BanknotesIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Joy TV</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <BellIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block"> Rice Organization </span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <BugAntIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Sunny Walk</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CalendarIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Hisense</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CameraIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Techno</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CircleStackIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Samsung</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CloudIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Huawei Mobile</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CpuChipIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Chromium</span>
         </div>
         <div
-          class="flex justify-center cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
+          class="flex justify-start cursor-pointer items-center gap-5 rounded-2xl bg-blue-900 p-8"
         >
           <CursorArrowRippleIcon class="h-8 w-8 text-gray-100" />
           <span class="text-3xl text-white truncate hidden lg:block">Brilliantly</span>

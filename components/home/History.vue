@@ -12,21 +12,20 @@ import { MinusIcon } from "@heroicons/vue/24/outline";
           <h1 class="text-3xl font-bold uppercase text-gray-500">Our Story</h1>
           <MinusIcon class="h-6 w-6" />
         </div>
-        <span class="text-xs italic">Started on the {{ new Date() }}</span>
+        <span class="text-xs italic">A healing space by youth for youth</span>
       </div>
       <div>
         <p class="text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-          aliquid, quis earum veniam, reiciendis ullam possimus dicta quia
-          sapiente ipsam alias? Placeat deleniti laboriosam et aliquam dolore
-          consequatur commodi blanditiis minus explicabo odit quisquam in, vero
-          officiis assumenda totam reiciendis, dolorem eaque doloremque, soluta
-          voluptatum vel nulla. Voluptate amet laboriosam repudiandae quaerat
-          non in, expedita et praesentium dolore ullam error inventore sint
-          maxime sunt, eaque odio earum maiores. Quos eius fuga ipsum
-          accusantium suscipit praesentium in corporis quidem officia facilis
-          cumque illum, aut atque! Veniam, id vero sunt neque rem in quia? Sunt
-          iusto pariatur reiciendis ea veritatis aliquid suscipit?
+          Healing Minds is a registered non-profit organization under the
+          Ghanaian... Healing Minds was founded in 2023 by young passionate
+          mental health advocates committed to promoting youth's emotional and
+          psychological well-being. As an interdisciplinary team, we promote
+          mental health awareness among Ghanaian youth through a safe and
+          judgment-free environment where clients can explore, understand,
+          process, and heal. We believe that people are the experts in their own
+          lives. To facilitate this, we provide them with resources that enable
+          them to navigate the mental health and wellness aspects of their lives
+          in a manner that honors their holistic nature.
         </p>
       </div>
     </div>

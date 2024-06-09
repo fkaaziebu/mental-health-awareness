@@ -1,9 +1,8 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-5 py-16 px-5 2xl:px-0 md:flex-row"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-5 px-5 py-16 md:flex-row 2xl:px-0"
     >
       <div
         class="max-w-full rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800"
@@ -14,9 +13,9 @@
             Empowering Lives Through Education
           </h4>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
-            eum voluptas repellendus perspiciatis! Incidunt quae sit, labore
-            consequuntur rem et?
+            To foster a community that promotes emotional well-being and
+            advocates mental health awareness by creating a stigma-free
+            environment.
           </p>
         </div>
       </div>
@@ -29,9 +28,9 @@
             Learning for All, Everywhere
           </h4>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            magnam dignissimos sint neque fuga deleniti, labore minus ab
-            distinctio eaque?
+            Committed to the well-being of individuals, families, groups, and
+            communities through education, prevention, intervention, healing,
+            and nurturing of skills
           </p>
         </div>
       </div>

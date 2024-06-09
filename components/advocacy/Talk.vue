@@ -2,13 +2,15 @@
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
-  <div class="w-full pb-10 pt-10 sm:py-10 px-5 2xl:px-0">
+  <div class="w-full px-5 pb-10 pt-10 sm:py-10 2xl:px-0">
     <div
-      class="mx-auto flex flex-col-reverse lg:flex-row max-w-screen-xl items-center justify-between gap-20 py-4"
+      class="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-between gap-10 lg:gap-20 py-4 lg:flex-row"
     >
       <div class="flex w-full flex-col gap-14">
         <div class="flex flex-col gap-8">
-          <h2 class="text-xl font-bold">A Peek Inside the Culture</h2>
+          <h2 class="hidden text-2xl font-semibold text-gray-900 lg:block">
+            A Peek Inside the Culture
+          </h2>
           <p class="text-gray-600">
             We're just getting started but our sleeves are rolled up, and we're
             excited to move forward together.
@@ -35,7 +37,10 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
           </button>
         </div>
       </div>
-      <div class="w-full">
+      <div class="flex flex-col gap-8">
+        <h2 class="block text-2xl font-semibold text-gray-900 lg:hidden">
+          A Peek Inside the Culture
+        </h2>
         <NuxtImg
           class="h-full w-full max-w-full rounded-3xl bg-gray-100 object-cover"
           src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/group.jpg"

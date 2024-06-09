@@ -6,7 +6,7 @@
     >
       <div class="flex w-full flex-col gap-5 sm:gap-8">
         <h2 class="font-semibold text-blue-700">Meet the Team</h2>
-        <h3 class="text-2xl font-semibold sm:w-[50%]">
+        <h3 class="text-2xl font-semibold text-gray-900 sm:w-[50%]">
           Meet Our Dedicated Team of Educators and Innovators
         </h3>
         <div

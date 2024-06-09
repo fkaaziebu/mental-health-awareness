@@ -24,10 +24,10 @@ const { updateActivePage } = useActivePage();
             <div
               class="flex w-full flex-col gap-5 sm:gap-7 md:w-[50%] md:gap-10"
             >
-              <h1 class="text-4xl font-semibold text-gray-100 md:text-6xl lg:text-4xl xl:text-6xl">
+              <h1 class="text-4xl font-semibold text-center md:text-left text-gray-100 md:text-6xl lg:text-4xl xl:text-6xl">
                 A place for Healing and Resting
               </h1>
-              <p class="text-xl text-gray-300">
+              <p class="text-base text-gray-200">
                 Fail a sleep easier and protect your sleep from disturbances
                 with Night-buds
               </p>

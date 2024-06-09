@@ -12,13 +12,17 @@ import {
       class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-10 py-4"
     >
       <div class="flex w-full items-center justify-between border-b pb-6">
-        <h1 class="w-full text-2xl font-bold">Our Guiding Principles</h1>
-        <p class="w-full text-xl text-gray-600">
+        <h1 class="w-full text-2xl font-semibold text-gray-900">
+          Our Guiding Principles
+        </h1>
+        <p class="w-full text-gray-600">
           We are a financial guide and guardian for our clients. These are the
           pillars that support tht relationship.
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
+      <div
+        class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+      >
         <div
           class="flex w-full flex-col items-center gap-6 rounded-md border p-5 text-center"
         >

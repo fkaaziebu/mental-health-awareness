@@ -4,13 +4,11 @@ import { ArrowDownTrayIcon } from "@heroicons/vue/24/outline";
 <template>
   <div class="w-full px-5 pb-10 pt-10 sm:pb-16 sm:pt-4 2xl:px-0">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-10 py-4 sm:flex-col"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-6 lg:gap-10 py-4 sm:flex-col"
     >
-      <div class="flex w-full items-center justify-center py-4">
-        <h1 class="text-3xl font-semibold">
-          An ever-growing list of resources
-        </h1>
-      </div>
+    <h1 class="text-2xl w-full font-semibold text-gray-900">
+      An ever-growing list of resources
+    </h1>
       <div
         class="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
       >

@@ -10,7 +10,7 @@
       >
         <div class="flex flex-col gap-3">
           <h5 class="font-semibold text-blue-700">Our Vision</h5>
-          <h4 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-white">
+          <h4 class="mb-2 text-2xl font-semibold text-gray-900">
             Empowering Lives Through Education
           </h4>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -20,13 +20,12 @@
           </p>
         </div>
       </div>
-
       <div
         class="max-w-full rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800"
       >
         <div class="flex flex-col gap-3">
           <h5 class="font-semibold text-blue-700">Our Mission</h5>
-          <h4 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-white">
+          <h4 class="mb-2 text-2xl font-semibold text-gray-900">
             Learning for All, Everywhere
           </h4>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

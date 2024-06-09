@@ -6,7 +6,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
     <div
       class="mx-auto flex max-w-screen-xl flex-col justify-between gap-6 px-5 py-16 2xl:px-0"
     >
-      <h1 class="text-2xl font-semibold">Services</h1>
+      <h1 class="text-2xl font-semibold text-gray-900">Services</h1>
       <div
         class="grid items-center justify-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
@@ -19,7 +19,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
                 alt=""
               />
               <div
-                class="absolute left-0 top-0 hidden h-full w-full items-center justify-center group-hover:flex"
+                class="absolute left-0 top-0 flex h-full w-full items-center justify-center lg:hidden lg:group-hover:flex"
               >
                 <div class="mt-auto w-full px-6 py-8">
                   <div
@@ -51,7 +51,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
                 alt=""
               />
               <div
-                class="absolute left-0 top-0 hidden h-full w-full items-center justify-center group-hover:flex"
+                class="absolute left-0 top-0 flex h-full w-full items-center justify-center lg:hidden lg:group-hover:flex"
               >
                 <div class="mt-auto w-full px-6 py-8">
                   <div
@@ -83,7 +83,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
                 alt=""
               />
               <div
-                class="absolute left-0 top-0 hidden h-full w-full items-center justify-center group-hover:flex"
+                class="absolute left-0 top-0 flex h-full w-full items-center justify-center lg:hidden lg:group-hover:flex"
               >
                 <div class="mt-auto w-full px-6 py-8">
                   <div
@@ -115,7 +115,7 @@ import { LinkIcon } from "@heroicons/vue/24/outline";
                 alt=""
               />
               <div
-                class="absolute left-0 top-0 hidden h-full w-full items-center justify-center group-hover:flex"
+                class="absolute left-0 top-0 flex h-full w-full items-center justify-center lg:hidden lg:group-hover:flex"
               >
                 <div class="mt-auto w-full px-6 py-8">
                   <div

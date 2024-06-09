@@ -12,7 +12,7 @@ import {
     >
       <div class="flex flex-col gap-10 md:w-[70%] lg:w-[40%]">
         <div class="flex flex-col gap-5">
-          <h1 class="text-5xl">Contact Us</h1>
+          <h1 class="text-5xl text-center lg:text-left">Contact Us</h1>
           <p class="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             dolorem commodi aliquam quae quasi, qui iure numquam labore

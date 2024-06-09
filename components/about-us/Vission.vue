@@ -8,7 +8,9 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
     >
       <div class="flex w-full flex-col gap-14">
         <div class="flex flex-col gap-8 md:gap-4 lg:gap-8">
-          <h2 class="text-xl font-bold">Our Vission Statement</h2>
+          <h2 class="hidden text-2xl font-semibold text-gray-900 lg:block">
+            Our Vission Statement
+          </h2>
           <p class="text-gray-600">
             We're just getting started but our sleeves are rolled up, and we're
             excited to move forward together.
@@ -20,7 +22,10 @@ import { ArrowRightIcon } from "@heroicons/vue/24/outline";
           </p>
         </div>
       </div>
-      <div class="w-full">
+      <div class="flex w-full flex-col gap-8 md:gap-4 lg:gap-8">
+        <h2 class="block text-2xl font-semibold text-gray-900 lg:hidden">
+          Our Vission Statement
+        </h2>
         <NuxtImg
           class="mr-auto h-60 w-full border border-gray-500 bg-gray-100 object-cover lg:w-auto"
           src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/group.jpg"

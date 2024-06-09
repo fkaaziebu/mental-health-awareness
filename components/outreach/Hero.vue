@@ -24,7 +24,7 @@ const { updateActivePage } = useActivePage();
         <div>
           <button
             type="button"
-            class="group rounded-xl bg-gray-800 px-4 py-3 text-gray-50 hover:bg-gray-900"
+            class="group w-full rounded-xl bg-gray-800 px-4 py-3 text-gray-50 hover:bg-gray-900 md:w-auto"
             @click="
               [updateActivePage('/contact-us'), navigateTo('/contact-us')]
             "

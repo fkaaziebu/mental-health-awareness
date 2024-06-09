@@ -18,7 +18,7 @@ import {
     <div
       class="mx-auto flex max-w-screen-xl flex-col justify-between gap-6 px-5 py-16 2xl:px-0"
     >
-      <h1 class="text-2xl font-semibold">Our Partners</h1>
+      <h1 class="text-2xl font-semibold text-gray-900">Our Partners</h1>
       <div class="grid grid-cols-4 gap-2 md:grid-cols-4">
         <div
           class="flex cursor-pointer items-center justify-center gap-5 rounded-2xl bg-blue-900 p-8"

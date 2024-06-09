@@ -71,10 +71,10 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/"
-              class="block rounded px-4 text-lg py-3 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-4 py-3 text-lg lg:bg-transparent lg:px-2 lg:py-1"
               :class="
                 activePage === '/'
-                  ? 'underline bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  ? 'bg-gray-950 underline lg:rounded-none lg:border-b lg:bg-gray-900 lg:no-underline'
                   : ''
               "
               @click="[updateActivePage('/'), navbarInstance.collapse()]"
@@ -85,10 +85,10 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/about-us"
-              class="block rounded px-4 text-lg py-3 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-4 py-3 text-lg lg:bg-transparent lg:px-2 lg:py-1"
               :class="
                 activePage === '/about-us'
-                  ? 'underline bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  ? 'bg-gray-950 underline lg:rounded-none lg:border-b lg:bg-gray-900 lg:no-underline'
                   : ''
               "
               @click="
@@ -144,10 +144,10 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/partnership"
-              class="block rounded px-4 text-lg py-3 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-4 py-3 text-lg lg:bg-transparent lg:px-2 lg:py-1"
               :class="
                 activePage === '/partnership'
-                  ? 'underline bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  ? 'bg-gray-950 underline lg:rounded-none lg:border-b lg:bg-gray-900 lg:no-underline'
                   : ''
               "
               @click="
@@ -159,10 +159,10 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/team"
-              class="block rounded px-4 text-lg py-3 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-4 py-3 text-lg lg:bg-transparent lg:px-2 lg:py-1"
               :class="
                 activePage === '/team'
-                  ? 'underline bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  ? 'bg-gray-950 underline lg:rounded-none lg:border-b lg:bg-gray-900 lg:no-underline'
                   : ''
               "
               @click="[updateActivePage('/team'), navbarInstance.collapse()]"
@@ -172,10 +172,10 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/resources"
-              class="block rounded px-4 text-lg py-3 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-4 py-3 text-lg lg:bg-transparent lg:px-2 lg:py-1"
               :class="
                 activePage === '/resources'
-                  ? 'underline bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  ? 'bg-gray-950 underline lg:rounded-none lg:border-b lg:bg-gray-900 lg:no-underline'
                   : ''
               "
               @click="
@@ -187,10 +187,10 @@ onMounted(() => {
           <li>
             <NuxtLink
               to="/contact-us"
-              class="block rounded px-4 text-lg py-3 lg:bg-transparent lg:px-2 lg:py-1"
+              class="block rounded px-4 py-3 text-lg lg:bg-transparent lg:px-2 lg:py-1"
               :class="
                 activePage === '/contact-us'
-                  ? 'underline bg-gray-950 lg:rounded-none lg:border-b lg:bg-gray-900'
+                  ? 'bg-gray-950 underline lg:rounded-none lg:border-b lg:bg-gray-900 lg:no-underline'
                   : ''
               "
               @click="

@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import {
+  ArrowsPointingInIcon,
+  ScissorsIcon,
+  CursorArrowRaysIcon,
+} from "@heroicons/vue/24/solid";
+</script>
 <template>
   <div class="w-full">
     <div
@@ -13,92 +19,194 @@
           class="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-3"
         >
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="rounded-lg bg-gray-100 object-cover"
+                  class="bg-gray-100 object-cover"
                   src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1">
                 <h4 class="text-lg font-semibold">Frederick Kwame Aziebu</h4>
                 <span class="font-medium italic">Chairman</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, possimus?
+                </p>
+                <div class="flex items-center gap-2">
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ArrowsPointingInIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ScissorsIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <CursorArrowRaysIcon class="h-4 w-4 text-white" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="rounded-lg bg-gray-100 object-cover"
+                  class="bg-gray-100 object-cover"
                   src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1">
                 <h4 class="text-lg font-semibold">Frederick Kwame Aziebu</h4>
                 <span class="font-medium italic">Chairman</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, possimus?
+                </p>
+                <div class="flex items-center gap-2">
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ArrowsPointingInIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ScissorsIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <CursorArrowRaysIcon class="h-4 w-4 text-white" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="rounded-lg bg-gray-100 object-cover"
+                  class="bg-gray-100 object-cover"
                   src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1">
                 <h4 class="text-lg font-semibold">Frederick Kwame Aziebu</h4>
                 <span class="font-medium italic">Chairman</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, possimus?
+                </p>
+                <div class="flex items-center gap-2">
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ArrowsPointingInIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ScissorsIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <CursorArrowRaysIcon class="h-4 w-4 text-white" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="rounded-lg bg-gray-100 object-cover"
+                  class="bg-gray-100 object-cover"
                   src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1">
                 <h4 class="text-lg font-semibold">Frederick Kwame Aziebu</h4>
                 <span class="font-medium italic">Chairman</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, possimus?
+                </p>
+                <div class="flex items-center gap-2">
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ArrowsPointingInIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ScissorsIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <CursorArrowRaysIcon class="h-4 w-4 text-white" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="rounded-lg bg-gray-100 object-cover"
+                  class="bg-gray-100 object-cover"
                   src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1">
                 <h4 class="text-lg font-semibold">Frederick Kwame Aziebu</h4>
                 <span class="font-medium italic">Chairman</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, possimus?
+                </p>
+                <div class="flex items-center gap-2">
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ArrowsPointingInIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ScissorsIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <CursorArrowRaysIcon class="h-4 w-4 text-white" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div class="max-w-full rounded-lg bg-white dark:bg-gray-800">
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="rounded-lg bg-gray-100 object-cover"
+                  class="bg-gray-100 object-cover"
                   src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
                   alt=""
                 />
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1">
                 <h4 class="text-lg font-semibold">Frederick Kwame Aziebu</h4>
                 <span class="font-medium italic">Chairman</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, possimus?
+                </p>
+                <div class="flex items-center gap-2">
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ArrowsPointingInIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <ScissorsIcon class="h-4 w-4 text-white" />
+                  </span>
+                  <span class="rounded-full bg-gray-950 p-2">
+                    <CursorArrowRaysIcon class="h-4 w-4 text-white" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>

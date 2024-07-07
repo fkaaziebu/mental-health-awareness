@@ -7,6 +7,7 @@ import Activities from "~/components/home/Activities";
 import Partnership from "~/components/home/Partnership";
 import Services from "~/components/home/Services";
 import Donate from "~/components/global/Donate";
+import Gallery from "~/components/home/Gallery";
 
 </script>
 <template>
@@ -15,8 +16,9 @@ import Donate from "~/components/global/Donate";
     <History />
     <VisionMission />
     <Activities />
-    <Donate />
     <Services />
+    <Donate />
+    <Gallery />
     <Partnership />
   </div>
 </template>

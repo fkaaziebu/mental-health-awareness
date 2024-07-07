@@ -1,6 +1,7 @@
 version: '3.9'
 services:
   mentalhealth-app:
+    container_name: mhealth_container
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -11,10 +12,4 @@ services:
       - type: bind
         source: .
         target: /app
-
-      - type: bind
-        source: ./nuxt.config.ts
-        target: /app/nuxt.config.ts
-        
-      - type: volume
-        target: /app/node_modules
+      - ./node_modules:/app/node_modules

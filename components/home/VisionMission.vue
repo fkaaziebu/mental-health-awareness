@@ -2,7 +2,7 @@
 <template>
   <div class="w-full">
     <div
-      class="mx-auto flex max-w-screen-xl flex-col items-center justify-between gap-5 px-5 py-16 md:flex-row 2xl:px-0"
+      class="mx-auto grid max-w-screen-xl  gap-5 px-5 py-16 md:grid-cols-2 2xl:px-0"
     >
       <div
         class="max-w-full rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800"

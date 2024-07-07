@@ -10,9 +10,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  vue: {
-    compilerOptions: {
-      isCustomElement: (tag) => ["Vue3Lottie"].includes(tag),
-    },
-  },
 });

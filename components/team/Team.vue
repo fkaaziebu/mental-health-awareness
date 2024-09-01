@@ -1,5 +1,5 @@
 <script setup>
-import {teams} from '@/data.js'
+import { teams } from "@/data.js";
 import {
   ArrowsPointingInIcon,
   ScissorsIcon,
@@ -19,22 +19,25 @@ import {
         <div
           class="grid items-start justify-center gap-4 sm:grid-cols-2 md:grid-cols-3"
         >
-          <div v-for="team in teams" class="max-w-full rounded-lg bg-white dark:bg-gray-800">
+          <div
+            v-for="team in teams"
+            class="max-w-full rounded-lg bg-white dark:bg-gray-800"
+          >
             <div class="flex w-full flex-col gap-2 rounded-md border px-2 py-2">
               <div>
                 <NuxtImg
-                  class="bg-gray-100 object-cover"
-                  src="https://mental-health-ngo.s3.eu-north-1.amazonaws.com/person.jpg"
+                  class="bg-gray-100 object-cover h-80 w-full"
+                  :src="team.url"
                   alt=""
                 />
               </div>
               <div class="flex flex-col gap-1">
-                <h4 class="text-lg font-semibold">{{team.name}}</h4>
+                <h4 class="text-lg font-semibold">{{ team.name }}</h4>
                 <span class="font-medium italic">Chairman</span>
               </div>
               <div class="flex flex-col gap-3">
                 <p>
-                  {{team.description}}
+                  {{ team.description }}
                 </p>
                 <div class="flex items-center gap-2">
                   <span class="rounded-full bg-gray-950 p-2">
